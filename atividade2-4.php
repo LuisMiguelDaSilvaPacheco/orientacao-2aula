@@ -1,11 +1,16 @@
 <?php
 
+$qntPar = 0;
+$qntImpar = 0;
+
 for ($vezes = 0; $vezes < 10; $vezes++) {
     $num = readline("Diga um numero: ");
 
     if ($num % 2 == 0) {
-        print "Seu numero é par\n";
+        $qntPar++;
     } else {
-        print "Seu numero é ímpar\n";
+        $qntImpar++;
     }
+
+    print("Você disse $qntPar números pares e $qntImpar números ímpares");
 }
